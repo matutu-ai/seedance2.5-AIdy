@@ -29,6 +29,16 @@ The final prompt follows the fixed sections: Story Context, Character Acting, Em
 - [Fashion scene](examples/fashion_scene.md): editorial movement with clothing continuity.
 - [Commercial scene](examples/commercial_scene.md): an electric vehicle city film.
 
+## Commercial live-action director layer
+
+The independent [Seedance Real Commercial Film Director](skills/seedance-real-commercial-film-director/SKILL.md) skill adds character locking, multi-view venue locking, realistic human motion, and commercial storyboard generation without changing the original director skill. Use it when reference images, a real person, a venue, or a 30-second commercial structure must remain consistent across shots.
+
+- Commercial flow: reference roles → character/venue locks → storyboard → camera/light/sound → final Seedance 2.5 prompt → consistency QA.
+- Image assignment: every asset receives a role, coverage, inheritance, and do-not-inherit boundary; never treat all references as one mixed image.
+- Multi-view stability: wide, left, right, stage, and audience views become one landmark map. Entrances, stage, seating, proportions, and screen direction remain fixed.
+- Tests: [consistency-test.md](skills/seedance-real-commercial-film-director/tests/consistency-test.md).
+- Full case: [GEO operator's AI growth journey](skills/seedance-real-commercial-film-director/examples/geo-training-camp-case.md).
+
 ## Extending the skill
 
 Add a focused reference when it changes a directing decision, then link it from `SKILL.md`. Add a target-model template only when its prompt grammar or controls differ materially. Keep core engines platform-neutral; avoid adding generic word lists or duplicate workflows.
