@@ -39,6 +39,17 @@ The final prompt follows the fixed sections: Story Context, Character Acting, Em
 5. Generate storyboard, camera language, lens, movement, lighting, sound, and continuity rules.
 6. Compile and quality-check a copy-ready Seedance 2.5 prompt.
 
+## TVC Commercial Director
+
+When the brief contains TVC, 商业广告, 品牌宣传片, 广告片, 30秒广告, 企业广告, or 产品广告, use the dedicated [TVC Director module](tvc/README.md). It adds brand insight, creative big idea, 15/30/60-second script structures, cinematic shot lists, commercial camera language, sound design, Seedance 2.5 TVC prompt generation, and quality evaluation.
+
+```text
+企业资料 → Brand Analysis → Big Idea → TVC Script → Storyboard
+→ Seedance 2.5 Prompt → Quality Agent
+```
+
+TVC test: [Shenzhen AI technology enterprise](tests/tvc-ai-tech-enterprise.md).
+
 ## Director modules
 
 The root modules are organized as `director/`, `pre-production/`, `cinematography/`, `seedance/`, `templates/`, and `quality-check/`. The existing `seedance-real-commercial-film-director` and `seedance-cinematic-director-agent` remain available as focused sub-skills.
