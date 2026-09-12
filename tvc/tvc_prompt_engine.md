@@ -16,4 +16,4 @@ Negative Prompt: AI artifacts and production risks
 End State: brand-readable final frame
 ```
 
-Compile one shot timeline into one copy-ready Seedance 2.5 prompt. Do not leave planning placeholders in the final block.
+Compile one shot timeline into one copy-ready Seedance 2.5 prompt. Output the final block in Chinese by default, keep it separate from analysis, and do not leave planning placeholders in the final block. Use one consistent vocabulary for the same character, product, venue, and brand across all shots.

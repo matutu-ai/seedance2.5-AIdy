@@ -33,7 +33,9 @@ TVC output must include Brand Insight, Creative Big Idea, Campaign Theme, Story 
 
 ## Output contract
 
-Give a concise Chinese director note, followed by one copy-ready prompt in the selected model language (Chinese by default). For a cinematic prompt, retain every section from `cinematic_template.md`, in order. Use concrete, filmable instructions: never substitute vague phrases such as “cinematic shot” or “beautiful camera” for position, lens, direction, speed, focus, and inertia.
+Give a concise Chinese director note, followed by exactly one copy-ready prompt. Chinese is the default output language unless the user requests another language. Keep the planning note and the copy block visibly separate so the user can paste only the final prompt. For a cinematic prompt, retain every section from `cinematic_template.md`, in order. Use concrete, filmable instructions: never substitute vague phrases such as “cinematic shot” or “beautiful camera” for position, lens, direction, speed, focus, and inertia.
+
+When references are supplied, begin the output with a compact role map (`@Image`, `ROLE`, `CONTROLS`, `DO_NOT_CONTROL`) before the director note. If brand, product, duration, or platform information is missing, state the assumption in the note and keep it out of the identity lock unless the user confirms it.
 
 Do not promise unsupported platform parameters. Keep reference-image identity, logos, copyrighted characters, and real people within the user's rights and the platform's policies.
 
