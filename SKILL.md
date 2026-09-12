@@ -26,3 +26,5 @@ Treat the request as a production problem, not a keyword-fill exercise. Infer on
 Give a concise Chinese director note, followed by one copy-ready prompt in the selected model language (Chinese by default). For a cinematic prompt, retain every section from `cinematic_template.md`, in order. Use concrete, filmable instructions: never substitute vague phrases such as “cinematic shot” or “beautiful camera” for position, lens, direction, speed, focus, and inertia.
 
 Do not promise unsupported platform parameters. Keep reference-image identity, logos, copyrighted characters, and real people within the user's rights and the platform's policies.
+
+For final Seedance 2.5 export, consult [Seedance 2.5 export adapter](references/seedance25_export_adapter.md). This is an output-layer reference to `matutu-ai/seedance2.5-skill`; the existing director modules and their section order remain unchanged.
