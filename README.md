@@ -30,6 +30,10 @@ The final prompt follows the fixed sections: Story Context, Character Acting, Em
 - [Commercial scene](examples/commercial_scene.md): an electric vehicle city film.
 - [GEO growth journey](examples/GEO-growth-journey.md): 《当AI成为运营伙伴》.
 
+## Public-class demo
+
+- [15-minute demo: 《当AI成为运营伙伴》](demos/public-class-15min.md): from business requirement to director analysis, 30-second structure, cinematography, Seedance prompt, quality check, and the GEO → Seedance → Content enterprise growth loop.
+
 ## Commercial video generation
 
 1. Understand product, brand, audience, and marketing purpose.
@@ -53,6 +57,8 @@ TVC test: [Shenzhen AI technology enterprise](tests/tvc-ai-tech-enterprise.md).
 ## Director modules
 
 The root modules are organized as `director/`, `pre-production/`, `cinematography/`, `seedance/`, `templates/`, and `quality-check/`. The existing `seedance-real-commercial-film-director` and `seedance-cinematic-director-agent` remain available as focused sub-skills.
+
+The public demo is designed for a live 15-minute class: it shows the complete production chain instead of presenting the repository as a collection of prompt templates.
 
 ## Commercial live-action director layer
 
