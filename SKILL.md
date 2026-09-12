@@ -3,17 +3,21 @@ name: seedance-cinematic-director
 description: Turn a story, brief, or reference into a director-grade cinematic video prompt for Seedance 2.0/2.5, Kling, Runway, or Veo. Use for narrative scenes, acting direction, shot design, lighting, spatial continuity, and realistic world behavior; not for simple one-line visual concepts.
 ---
 
-# AI Cinematic Director System
+# Seedance 2.5 AI Commercial Director System
 
-Treat the request as a production problem, not a keyword-fill exercise. Infer only details that are compatible with the brief; state consequential assumptions (model, duration, aspect ratio, identity/reference constraints) before the final prompt. Ask at most two questions only when an answer changes the story, target platform, or required reference fidelity.
+Transform professional director experience into executable AI video production workflows. Use this root skill when a business goal, brand brief, product, and/or reference images must become a commercial film plan and a copy-ready Seedance 2.5 production prompt.
 
-## Director workflow
+Treat the request as a production problem, not a keyword-fill exercise. Convert business goal -> creative strategy -> 30-second structure -> storyboard -> camera/light plan -> Seedance prompt -> quality evaluation. Infer only compatible details and label consequential assumptions.
 
-1. Read [scene analyzer](core/scene_analyzer.md), then establish genre, dramatic objective, conflict, time/place, visual style, and a beginning-to-end beat.
-2. Read [character engine](core/character_engine.md) and [emotion engine](core/emotion_engine.md) for character-led work. Translate emotions into observable face, eyes, breath, posture, hands, and transitions.
-3. Read the relevant [camera](core/camera_engine.md), [lighting](core/lighting_engine.md), [environment](core/environment_engine.md), and [realism](core/realism_engine.md) directions. Specify spatial anchors before camera movement.
-4. Select a compiler contract: [cinematic](prompt/cinematic_template.md) by default; [Seedance](prompt/seedance_template.md) for Seedance specifics; [commercial](prompt/commercial_template.md) for product work; [narrative](prompt/narrative_template.md) for multi-beat drama.
-5. Score the result with [prompt checker](evaluator/prompt_checker.md). Revise weak sections until it reaches 80/100, or name a constraint that makes a section intentionally unavailable.
+## Commercial director workflow
+
+1. Read [creative analysis](director/creative-analysis.md) and [commercial thinking](director/commercial-thinking.md): identify product, audience, purpose, theme, conflict, emotion, and positioning.
+2. Read [story structure](director/story-structure.md) and [emotional design](director/emotional-design.md): build the 0-5s / 5-15s / 15-25s / 25-30s arc.
+3. Read [reference management](pre-production/reference-management.md) and [character bible](pre-production/character-bible.md): assign every reference a role and lock identity separately from motion.
+4. Read [scene design](pre-production/scene-design.md) and [storyboard template](pre-production/storyboard-template.md): define spatial anchors and shot beats.
+5. Read the relevant [camera](cinematography/camera-language.md), [lens](cinematography/lens-guide.md), [lighting](cinematography/lighting-guide.md), and [movement](cinematography/movement-rules.md) directions.
+6. Compile with [prompt framework](seedance/prompt-framework.md), [30-second template](seedance/30-second-template.md), [consistency control](seedance/consistency-control.md), and [negative prompt](seedance/negative-prompt.md).
+7. Run the [quality checks](quality-check/commercial-quality.md), [character check](quality-check/character-check.md), [scene check](quality-check/scene-check.md), and [Seedance risk check](quality-check/seedance-risk-check.md).
 
 ## Reference routing
 
@@ -27,4 +31,4 @@ Give a concise Chinese director note, followed by one copy-ready prompt in the s
 
 Do not promise unsupported platform parameters. Keep reference-image identity, logos, copyrighted characters, and real people within the user's rights and the platform's policies.
 
-For final Seedance 2.5 export, consult [Seedance 2.5 export adapter](references/seedance25_export_adapter.md). This is an output-layer reference to `matutu-ai/seedance2.5-skill`; the existing director modules and their section order remain unchanged.
+For final Seedance 2.5 export, consult [Seedance 2.5 export adapter](references/seedance25_export_adapter.md). Existing cinematic modules remain available for narrative work; the commercial modules add business planning, reference control, and production QA.

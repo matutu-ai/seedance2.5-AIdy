@@ -1,10 +1,10 @@
-# Seedance Cinematic Director Skill v1.0
+# Seedance 2.5 AI Commercial Director Skill
 
-`seedance-cinematic-director` converts a premise into a production-ready cinematic direction package. It is an AI video director workflow: it analyzes dramatic intent, stages performance, camera, light, space, background behavior, and physical continuity before compiling a prompt.
+This repository packages professional director experience into executable AI video production workflows. It transforms a business requirement, reference images, and brand information into an AI Director Plan, 30-second film structure, storyboard, camera and lighting design, Seedance 2.5 production prompt, and quality evaluation.
 
 ## Workflow
 
-`story → scene analysis → acting + emotion arc → blocking → camera + light → world + realism → prompt compiler → score`
+`business goal → creative strategy → 30s structure → references → storyboard → camera/light → Seedance prompt → quality check`
 
 Use `$seedance-cinematic-director` and provide the story plus any known model, duration, aspect ratio, visual references, or non-negotiable details. If these are omitted, the skill makes and labels conservative production assumptions.
 
@@ -28,6 +28,20 @@ The final prompt follows the fixed sections: Story Context, Character Acting, Em
 - [Emotional scene](examples/emotional_scene.md): reunion with restrained micro-expression.
 - [Fashion scene](examples/fashion_scene.md): editorial movement with clothing continuity.
 - [Commercial scene](examples/commercial_scene.md): an electric vehicle city film.
+- [GEO growth journey](examples/GEO-growth-journey.md): 《当AI成为运营伙伴》.
+
+## Commercial video generation
+
+1. Understand product, brand, audience, and marketing purpose.
+2. Generate theme, conflict, emotional curve, visual style, and commercial positioning.
+3. Build 0-5s Hook, 5-15s Problem/Transformation, 15-25s Solution/Value, and 25-30s Memory Point/Brand Emotion.
+4. Assign reference roles, lock character identity, and build a multi-view venue memory.
+5. Generate storyboard, camera language, lens, movement, lighting, sound, and continuity rules.
+6. Compile and quality-check a copy-ready Seedance 2.5 prompt.
+
+## Director modules
+
+The root modules are organized as `director/`, `pre-production/`, `cinematography/`, `seedance/`, `templates/`, and `quality-check/`. The existing `seedance-real-commercial-film-director` and `seedance-cinematic-director-agent` remain available as focused sub-skills.
 
 ## Commercial live-action director layer
 
@@ -47,6 +61,12 @@ The independent [Seedance Cinematic Director Agent](skills/seedance-cinematic-di
 - Multi-view space locking: convert wide, left, right, stage, and audience views into one landmark graph; preserve entrances, stage, seating, proportions, and screen direction.
 - Live-action consistency: keep identity separate from shot motion and describe eye direction, weight transfer, contact, inertia, and settling.
 - Tests and case: [consistency-test.md](skills/seedance-cinematic-director-agent/tests/consistency-test.md) and [GEO运营人的AI成长之旅](skills/seedance-cinematic-director-agent/examples/geo-training-camp-case.md).
+
+## Acceptance checks
+
+- [Character consistency test](tests/character-consistency-test.md)
+- [Venue consistency test](tests/venue-consistency-test.md)
+- [Prompt completeness test](tests/prompt-completeness-test.md)
 
 ## Extending the skill
 
