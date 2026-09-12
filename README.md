@@ -50,6 +50,10 @@ When the brief contains TVC, 商业广告, 品牌宣传片, 广告片, 30秒广�
 
 TVC test: [Shenzhen AI technology enterprise](tests/tvc-ai-tech-enterprise.md).
 
+## V2.0 camera and TVC engine
+
+The cinematic camera language engine is organized under `camera/` with movement, POV, and emotion shot families. The repository-level `prompts/` directory contains commercial compilation, Seedance rules, cinematic styles, and consistency rules. TVC duration, scripts, and templates remain under `tvc/`; test inputs are under `tests/tvc_test/`.
+
 ## Director modules
 
 The root modules are organized as `director/`, `pre-production/`, `cinematography/`, `seedance/`, `templates/`, and `quality-check/`. The existing `seedance-real-commercial-film-director` and `seedance-cinematic-director-agent` remain available as focused sub-skills.

@@ -34,6 +34,7 @@ Brand Analysis Agent
 - Read [tvc_prompt_engine.md](tvc_prompt_engine.md) and [tvc_quality_check.md](tvc_quality_check.md) before delivery.
 - Select duration and business templates under [templates](templates/), then industry guidance under [industries](industries/).
 - Use prompt patterns under [prompts](prompts/) as references, never as brand-copy replacements.
+- For the broader camera library and Seedance rules, use the repository-level [camera](../camera/), [prompts](../prompts/), and [TVC test suite](../tests/tvc_test/) modules.
 
 ## Guardrails
 

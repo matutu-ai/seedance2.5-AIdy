@@ -19,9 +19,9 @@ Treat the request as a production problem, not a keyword-fill exercise. Convert 
 6. Compile with [prompt framework](seedance/prompt-framework.md), [30-second template](seedance/30-second-template.md), [consistency control](seedance/consistency-control.md), and [negative prompt](seedance/negative-prompt.md).
 7. Run the [quality checks](quality-check/commercial-quality.md), [character check](quality-check/character-check.md), [scene check](quality-check/scene-check.md), and [Seedance risk check](quality-check/seedance-risk-check.md).
 
-## TVC Commercial Director Mode
+## Commercial Director Mode
 
-Automatically enter [TVC Director](tvc/README.md) mode when the request includes `TVC`, `商业广告`, `品牌宣传片`, `广告片`, `30秒广告`, `企业广告`, or `产品广告`. Follow the TVC pipeline: brand analysis -> creative big idea -> 15/30/60s structure -> script -> storyboard -> camera and visual style -> Seedance 2.5 TVC prompt -> quality check.
+Automatically enter [TVC Director](tvc/README.md) mode when the request includes `TVC`, `商业广告`, `品牌宣传片`, `广告片`, `商业大片`, `宣传片`, `30秒广告`, `企业广告`, `产品广告`, or `电影感视频`. Follow the TVC pipeline: brand analysis -> creative big idea -> 15/30/60s structure -> script -> storyboard -> camera language -> Seedance 2.5 TVC prompt -> quality check.
 
 TVC output must include Brand Insight, Creative Big Idea, Campaign Theme, Story Concept, TVC Script, Shot List, Camera Language, Seedance Prompt, Music Direction, and Post Production. Preserve character, product, venue, and brand consistency across all shots.
 
