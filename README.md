@@ -39,6 +39,15 @@ The independent [Seedance Real Commercial Film Director](skills/seedance-real-co
 - Tests: [consistency-test.md](skills/seedance-real-commercial-film-director/tests/consistency-test.md).
 - Full case: [GEO operator's AI growth journey](skills/seedance-real-commercial-film-director/examples/geo-training-camp-case.md).
 
+## Cinematic director agent layer
+
+The independent [Seedance Cinematic Director Agent](skills/seedance-cinematic-director-agent/SKILL.md) orchestrates reference intelligence, character locking, venue memory, storyboard generation, prompt compilation, and quality checking. Input images and a commercial brief; output a directly usable Seedance 2.5 director prompt.
+
+- Commercial video flow: reference roles → character lock → venue memory → storyboard → camera/light/sound → prompt compiler → quality checker.
+- Multi-view space locking: convert wide, left, right, stage, and audience views into one landmark graph; preserve entrances, stage, seating, proportions, and screen direction.
+- Live-action consistency: keep identity separate from shot motion and describe eye direction, weight transfer, contact, inertia, and settling.
+- Tests and case: [consistency-test.md](skills/seedance-cinematic-director-agent/tests/consistency-test.md) and [GEO运营人的AI成长之旅](skills/seedance-cinematic-director-agent/examples/geo-training-camp-case.md).
+
 ## Extending the skill
 
 Add a focused reference when it changes a directing decision, then link it from `SKILL.md`. Add a target-model template only when its prompt grammar or controls differ materially. Keep core engines platform-neutral; avoid adding generic word lists or duplicate workflows.
