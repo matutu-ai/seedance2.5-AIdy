@@ -30,10 +30,6 @@ The final prompt follows the fixed sections: Story Context, Character Acting, Em
 - [Commercial scene](examples/commercial_scene.md): an electric vehicle city film.
 - [GEO growth journey](examples/GEO-growth-journey.md): 《当AI成为运营伙伴》.
 
-## Public-class demo
-
-- [15-minute demo: 《当AI成为运营伙伴》](demos/public-class-15min.md): from business requirement to director analysis, 30-second structure, cinematography, Seedance prompt, quality check, and the GEO → Seedance → Content enterprise growth loop.
-
 ## Commercial video generation
 
 1. Understand product, brand, audience, and marketing purpose.
